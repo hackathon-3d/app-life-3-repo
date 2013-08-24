@@ -138,6 +138,10 @@
 		C6768EB717C86371003C0FD3 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6768EB517C86371003C0FD3 /* ViewController.xib */; };
 		C6829CB917C9134500A2B07E /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C6829CB817C9134500A2B07E /* Default-Landscape~ipad.png */; };
 		C6829CBB17C9134A00A2B07E /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C6829CBA17C9134A00A2B07E /* Default-Landscape@2x~ipad.png */; };
+		C6829CBF17C91A9C00A2B07E /* themePreview2.png in Resources */ = {isa = PBXBuildFile; fileRef = C6829CBD17C91A9C00A2B07E /* themePreview2.png */; };
+		C6829CC017C91A9C00A2B07E /* themePreview2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6829CBE17C91A9C00A2B07E /* themePreview2@2x.png */; };
+		C6829CC317C91B8F00A2B07E /* traffic.png in Resources */ = {isa = PBXBuildFile; fileRef = C6829CC117C91B8F00A2B07E /* traffic.png */; };
+		C6829CC417C91B8F00A2B07E /* traffic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6829CC217C91B8F00A2B07E /* traffic@2x.png */; };
 		C6AF42CC17C8AD9800C7F474 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AF42C917C8AD9800C7F474 /* UIColor+Expanded.m */; };
 		C6AF42CD17C8AD9800C7F474 /* UIColor+HSV.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AF42CB17C8AD9800C7F474 /* UIColor+HSV.m */; };
 		C6AF42D517C8ADA700C7F474 /* FCBrightDarkGradView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AF42CF17C8ADA700C7F474 /* FCBrightDarkGradView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -336,6 +340,10 @@
 		C6768EB617C86371003C0FD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		C6829CB817C9134500A2B07E /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		C6829CBA17C9134A00A2B07E /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		C6829CBD17C91A9C00A2B07E /* themePreview2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = themePreview2.png; sourceTree = "<group>"; };
+		C6829CBE17C91A9C00A2B07E /* themePreview2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "themePreview2@2x.png"; sourceTree = "<group>"; };
+		C6829CC117C91B8F00A2B07E /* traffic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = traffic.png; sourceTree = "<group>"; };
+		C6829CC217C91B8F00A2B07E /* traffic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "traffic@2x.png"; sourceTree = "<group>"; };
 		C6AF42C817C8AD9800C7F474 /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
 		C6AF42C917C8AD9800C7F474 /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
 		C6AF42CA17C8AD9800C7F474 /* UIColor+HSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HSV.h"; sourceTree = "<group>"; };
@@ -556,6 +564,10 @@
 		C63F80F917C8CBFA0055E95B /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				C6829CC117C91B8F00A2B07E /* traffic.png */,
+				C6829CC217C91B8F00A2B07E /* traffic@2x.png */,
+				C6829CBD17C91A9C00A2B07E /* themePreview2.png */,
+				C6829CBE17C91A9C00A2B07E /* themePreview2@2x.png */,
 				C60E69C417C911B0000AD2C7 /* buttonPreview.png */,
 				C60E69C517C911B0000AD2C7 /* buttonPreview@2x.png */,
 				C60E69B417C91127000AD2C7 /* previewImage.png */,
@@ -673,6 +685,7 @@
 		C6768EA017C86371003C0FD3 /* HyprMail */ = {
 			isa = PBXGroup;
 			children = (
+				C6829CBC17C919E100A2B07E /* Template 2 */,
 				C60E699B17C9038D000AD2C7 /* Template 1 */,
 				C63F80F917C8CBFA0055E95B /* UIElements */,
 				C618B5A417C86D17005C78AE /* 300.jpeg */,
@@ -722,6 +735,13 @@
 				C6768EB017C86371003C0FD3 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6829CBC17C919E100A2B07E /* Template 2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Template 2";
 			sourceTree = "<group>";
 		};
 		C6C5B5E317C8643A0048783F /* SPUserResizableView */ = {
@@ -1052,6 +1072,10 @@
 				C60E69CF17C9123A000AD2C7 /* composeur-72@2x.png in Resources */,
 				C6829CB917C9134500A2B07E /* Default-Landscape~ipad.png in Resources */,
 				C6829CBB17C9134A00A2B07E /* Default-Landscape@2x~ipad.png in Resources */,
+				C6829CBF17C91A9C00A2B07E /* themePreview2.png in Resources */,
+				C6829CC017C91A9C00A2B07E /* themePreview2@2x.png in Resources */,
+				C6829CC317C91B8F00A2B07E /* traffic.png in Resources */,
+				C6829CC417C91B8F00A2B07E /* traffic@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

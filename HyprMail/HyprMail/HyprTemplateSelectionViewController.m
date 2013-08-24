@@ -16,6 +16,7 @@
 #import "HyprTextWidget.h"
 #import "HyprButtonWidget.h"
 #import "UIColor+HexString.h"
+#import "HyprYoutubeWidget.h"   
 
 @interface HyprTemplateSelectionViewController ()
 
@@ -188,6 +189,79 @@
         [editor.contentScrollView addSubview:houd3.view];
     }];
 
+}
+
+-(IBAction)loadTemplate2:(id)sender
+{
+    NSDictionary *theme = @{
+                            @"initial-text-color" : [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0],
+                            @"initial-text-font" : [UIFont  fontWithName:@"Avenir" size:17.0],
+                            @"initial-button-text-color" :[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0],
+                            @"initial-button-text-font" : [UIFont systemFontOfSize:13.0],
+                            @"initial-button-background-color" : [UIColor darkGrayColor],
+                            @"initial-document-background-color" : [UIColor darkGrayColor],
+                            @"initial-page-background-color" : [UIColor colorWithWhite:1.000 alpha:1.000]
+                            };
+    
+    
+    HyprEditorViewController * editor = [[HyprEditorViewController alloc] initWithNibName:@"HyprEditorViewController" bundle:nil withThemePack:theme];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:editor];
+    
+    //We need to move out the scrollview
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        
+        self.scrollView.frame = CGRectMake(0, 768, 1024, 704);
+        self.chalkDrawing.alpha = 0.0;
+        
+    } completion:^(BOOL finished) {
+        
+        nav.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self presentViewController:nav animated:YES completion:nil];
+        
+        HyprTextWidget *paragaph2 = [[HyprTextWidget alloc] initWithDocumentEditor:editor withInitialLocation:CGRectMake(40, 20, 520, 120) initialText:@"Gridlock" initialColor:[UIColor colorWithHexString:@"#EA5044" withAlpha:1.0] initialFont:[UIFont fontWithName:@"Helvetica-Bold" size:80.0]];
+        
+        paragaph2.textAlign = NSTextAlignmentLeft;
+        
+        [editor.onscreenWidgets addObject:paragaph2];
+        [editor.contentScrollView addSubview:paragaph2.view];
+        
+        UIGraphicsBeginImageContext(CGSizeMake(6, 88));
+        [[UIColor colorWithHexString:@"#222222" withAlpha:1.0] set];
+        
+        CGContextFillRect(UIGraphicsGetCurrentContext(), CGRectMake(0, 0, 600, 126));
+        
+        UIImage *pipe = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+
+        
+        HyprImageWidget *houd3 = [[HyprImageWidget alloc] initWithDocumentEditor:editor withInitialLocation:CGRectMake(40, 504, 6, 88) withImage:pipe];
+        
+        [editor.onscreenWidgets addObject:houd3];
+        [editor.contentScrollView addSubview:houd3.view];
+        
+        HyprYoutubeWidget *youtube = [[HyprYoutubeWidget alloc] initWithDocumentEditor:editor withInitialLocation:CGRectMake(0, 126, 600, 338) withImage:[UIImage imageNamed:@"traffic.png"]];
+        
+        youtube.youTubeImage = [UIImage imageNamed:@"traffic.png"];
+        
+        [editor.onscreenWidgets addObject:youtube];
+        [editor.contentScrollView addSubview:youtube.view];
+        
+        HyprTextWidget *paragaph3 = [[HyprTextWidget alloc] initWithDocumentEditor:editor withInitialLocation:CGRectMake(40, 504, 493, 150) initialText:@"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" initialColor:[UIColor colorWithHexString:@"#222222" withAlpha:1.0] initialFont:[UIFont fontWithName:@"Helvetica-Bold" size:22.0]];
+        
+        paragaph3.textAlign = NSTextAlignmentLeft;
+        
+        [editor.onscreenWidgets addObject:paragaph3];
+        [editor.contentScrollView addSubview:paragaph3.view];
+        
+        HyprTextWidget *paragaph4 = [[HyprTextWidget alloc] initWithDocumentEditor:editor withInitialLocation:CGRectMake(40, 620, 520, 100) initialText:@"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" initialColor:[UIColor colorWithHexString:@"#222222" withAlpha:1.0] initialFont:[UIFont fontWithName:@"Helvetica" size:18.0]];
+        
+        paragaph4.textAlign = NSTextAlignmentLeft;
+        
+        [editor.onscreenWidgets addObject:paragaph4];
+        [editor.contentScrollView addSubview:paragaph4.view];
+        
+    }];
 }
 
 CGFloat DegreesToRadians(CGFloat degrees)
