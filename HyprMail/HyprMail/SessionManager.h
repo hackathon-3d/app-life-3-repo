@@ -29,5 +29,6 @@ typedef void (^LoginResultBlock)(BOOL success, NSString *errorMessage);
 
 -(void)switchToTemplatePicker;
 -(void)uploadHtml:(NSString*)html toEmailList:(int)listID withSubject:(NSString*)subject moreAddresses:(NSString*)addresses completion:(LoginResultBlock)completion;
+-(void)switchToLogin;
 
 @end

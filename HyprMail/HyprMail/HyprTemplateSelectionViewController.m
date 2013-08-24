@@ -10,6 +10,7 @@
 #import "NSTimer+Blocks.h"
 #import "HyprEditorViewController.h"
 #import "AppDelegate.h"
+#import "SessionManager.h"
 
 #import "HyprImageWidget.h"
 #import "HyprTextWidget.h"
@@ -56,6 +57,11 @@
     [self.templateButton4 setBackgroundImage:coralIm forState:UIControlStateNormal];
 
     
+}
+
+-(IBAction)logout:(id)sender
+{
+    [[SessionManager sharedSession] switchToLogin];
 }
 
 -(IBAction)newBlankTemplate:(id)sender

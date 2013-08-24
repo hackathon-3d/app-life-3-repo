@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "HyprMail/SessionManager.m"
-         timestampString = "399051934.87847"
+         timestampString = "399055165.446871"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "116"
-         endingLineNumber = "116"
+         startingLineNumber = "117"
+         endingLineNumber = "117"
          landmarkName = "-uploadHtml:toEmailList:withSubject:moreAddresses:completion:"
          landmarkType = "5">
       </FileBreakpoint>

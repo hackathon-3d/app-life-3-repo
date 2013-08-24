@@ -9,6 +9,7 @@
 #import "SessionManager.h"
 #import "AppDelegate.h"
 #import "HyprTemplateSelectionViewController.h"
+#import "HyprLoginScreenViewController.h"
 static SessionManager *sharedSession;
 
 @implementation SessionManager
@@ -147,5 +148,16 @@ static SessionManager *sharedSession;
     del.window.rootViewController = templates;
     
     
+}
+
+-(void)switchToLogin
+{
+    self.app_key = nil;
+    
+    AppDelegate *del = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+
+    HyprLoginScreenViewController *login = [[HyprLoginScreenViewController alloc] initWithNibName:@"HyprLoginScreenViewController" bundle:nil];
+    
+    del.window.rootViewController = login;
 }
 @end
