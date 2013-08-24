@@ -68,8 +68,6 @@
 		C60E69C717C911B1000AD2C7 /* buttonPreview@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C60E69C517C911B0000AD2C7 /* buttonPreview@2x.png */; };
 		C60E69CD17C91236000AD2C7 /* composeur-72.png in Resources */ = {isa = PBXBuildFile; fileRef = C60E69CC17C91235000AD2C7 /* composeur-72.png */; };
 		C60E69CF17C9123A000AD2C7 /* composeur-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C60E69CE17C9123A000AD2C7 /* composeur-72@2x.png */; };
-		C60E69D217C91314000AD2C7 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = C60E69D017C91312000AD2C7 /* splash.png */; };
-		C60E69D317C91314000AD2C7 /* splash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C60E69D117C91313000AD2C7 /* splash@2x.png */; };
 		C618B59B17C866CC005C78AE /* SPUserResizableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C618B59A17C866CC005C78AE /* SPUserResizableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C618B5A017C866FF005C78AE /* HyprWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = C618B59F17C866FF005C78AE /* HyprWidget.m */; };
 		C618B5A317C86C14005C78AE /* HyprImageWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = C618B5A217C86C14005C78AE /* HyprImageWidget.m */; };
@@ -247,8 +245,6 @@
 		C60E69C517C911B0000AD2C7 /* buttonPreview@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonPreview@2x.png"; sourceTree = "<group>"; };
 		C60E69CC17C91235000AD2C7 /* composeur-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "composeur-72.png"; sourceTree = "<group>"; };
 		C60E69CE17C9123A000AD2C7 /* composeur-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "composeur-72@2x.png"; sourceTree = "<group>"; };
-		C60E69D017C91312000AD2C7 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = "../../../Google Drive/52apps Shared/Hackathon/Exports/splash.png"; sourceTree = "<group>"; };
-		C60E69D117C91313000AD2C7 /* splash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash@2x.png"; path = "../../../Google Drive/52apps Shared/Hackathon/Exports/splash@2x.png"; sourceTree = "<group>"; };
 		C618B59917C866CC005C78AE /* SPUserResizableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUserResizableView.h; sourceTree = "<group>"; };
 		C618B59A17C866CC005C78AE /* SPUserResizableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUserResizableView.m; sourceTree = "<group>"; };
 		C618B59E17C866FF005C78AE /* HyprWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyprWidget.h; sourceTree = "<group>"; };
@@ -677,8 +673,6 @@
 		C6768EA017C86371003C0FD3 /* HyprMail */ = {
 			isa = PBXGroup;
 			children = (
-				C60E69D017C91312000AD2C7 /* splash.png */,
-				C60E69D117C91313000AD2C7 /* splash@2x.png */,
 				C60E699B17C9038D000AD2C7 /* Template 1 */,
 				C63F80F917C8CBFA0055E95B /* UIElements */,
 				C618B5A417C86D17005C78AE /* 300.jpeg */,
@@ -1056,8 +1050,6 @@
 				C60E69C717C911B1000AD2C7 /* buttonPreview@2x.png in Resources */,
 				C60E69CD17C91236000AD2C7 /* composeur-72.png in Resources */,
 				C60E69CF17C9123A000AD2C7 /* composeur-72@2x.png in Resources */,
-				C60E69D217C91314000AD2C7 /* splash.png in Resources */,
-				C60E69D317C91314000AD2C7 /* splash@2x.png in Resources */,
 				C6829CB917C9134500A2B07E /* Default-Landscape~ipad.png in Resources */,
 				C6829CBB17C9134A00A2B07E /* Default-Landscape@2x~ipad.png in Resources */,
 			);

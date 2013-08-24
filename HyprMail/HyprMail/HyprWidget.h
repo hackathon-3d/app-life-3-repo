@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "SPUserResizableView.h"
 
+
 @class HyprEditorViewController;
 
 @interface HyprWidget : NSObject<SPUserResizableViewDelegate, UIGestureRecognizerDelegate, UIPopoverControllerDelegate>
@@ -29,6 +30,8 @@
 @property(nonatomic,strong)UILongPressGestureRecognizer *settingsTapRecog;
 
 @property(nonatomic,strong)UIPopoverController *popover;
+
+@property(nonatomic,weak)HyprEditorViewController *editor;
 
 -(id)initWithDocumentEditor:(HyprEditorViewController*)editor withInitialLocation:(CGRect)location;
 

@@ -34,19 +34,34 @@
         self.settingsTapRecog.delaysTouchesEnded = NO;
         self.settingsTapRecog.cancelsTouchesInView = YES;
         
+        UILongPressGestureRecognizer *deleter = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(triggerDelete)];
+        deleter.delegate = self;
+        deleter.minimumPressDuration = 2.0;
+        deleter.delaysTouchesBegan = NO;
+        deleter.delaysTouchesEnded = NO;
+        deleter.cancelsTouchesInView = YES;
+        
         self.x = location.origin.x;
         self.y = location.origin.y;
         self.width = location.size.width;
         self.height = location.size.height;
         
+        self.editor = editor;
+        
         self.UUID = [[NSUUID UUID] UUIDString];
         
         [self.view addGestureRecognizer:self.tapRecog];
         [self.view addGestureRecognizer:self.settingsTapRecog];
+        [self.view addGestureRecognizer:deleter];
 
     }
     
     return self;
+}
+
+-(void)triggerDelete
+{
+    [self.editor deleteWidget:self];
 }
 
 -(BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
@@ -79,6 +94,7 @@
 
 -(void)dealloc
 {
+    [self clearPopover];
     [self.view removeGestureRecognizer:self.tapRecog];
     self.view.delegate = nil;
     self.tapRecog = nil;
@@ -133,6 +149,8 @@
         self.popover = nil;
     }
 }
+
+
 
 -(void)openSettings
 {

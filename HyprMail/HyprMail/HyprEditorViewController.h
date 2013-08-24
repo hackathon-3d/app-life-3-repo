@@ -14,6 +14,7 @@
 @class HyprImageWidget;
 @class HyprTextWidget;
 @class HyprButtonWidget;
+@class HyprWidget;
 
 @interface HyprEditorViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UIGestureRecognizerDelegate, UIActionSheetDelegate, ColorPickerViewControllerDelegate, UIPopoverControllerDelegate>
 {
@@ -44,5 +45,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *pageSettignsButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil withThemePack:(NSDictionary*)theme;
+-(void)deleteWidget:(HyprWidget*)widget;
 
 @end

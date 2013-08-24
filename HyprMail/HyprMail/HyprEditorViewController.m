@@ -118,8 +118,23 @@
 
 }
 
+
+
+-(void)deleteWidget:(HyprWidget*)widget
+{
+    [self.onscreenWidgets removeObject:widget];
+    
+    [widget.view removeFromSuperview];
+}
+
 -(void)next
 {
+    
+    if (self.onscreenWidgets.count==0) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"You can't send an email with no contents." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alert show];
+        return;
+    }
     
     MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.view];
     hud.labelText = @"Uploading Email";

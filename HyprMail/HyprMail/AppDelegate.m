@@ -24,6 +24,9 @@
     
     [[UIBarButtonItem appearance] setBackButtonBackgroundImage:[[UIImage imageNamed:@"navbarBack.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 20, 0, 10)] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
+    [[UIBarButtonItem appearanceWhenContainedIn:[UIPopoverController class], nil] setBackButtonBackgroundImage:[[UIImage imageNamed:@"navbarBack.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 20, 0, 10)] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+
+    
     [[UINavigationBar appearance] setTitleTextAttributes:
      [NSDictionary dictionaryWithObjectsAndKeys:
       [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0],
